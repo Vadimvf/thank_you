@@ -28,6 +28,9 @@ body
   align-items: center;
   background-size: contain;
 }
+.heart-container .long {
+  width: 300px
+}
 .heart-container .icon
 {
   width: 30px;
@@ -51,7 +54,7 @@ body
 }
 .heart-container .icon.heart path
 {
-  animation: animate-heart 2s linear infinite
+  animation: animate-heart 4s linear infinite
 }
 
 @keyframes animate-heart
@@ -61,11 +64,11 @@ body
     stroke-dashoffset: 0;
     fill: #ffed77;
   }
-  40%
+  50%
   {
     stroke-dashoffset: 1560;
   }
-  80%
+  70%
   {
     stroke-dashoffset: 3120;
     fill: transparent;
