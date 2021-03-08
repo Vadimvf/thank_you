@@ -9,6 +9,11 @@ body
   padding: 0; */
   background-color: #1c212e;
 }
+
+.thank-header {
+  padding: 20px;
+}
+
 .heart-container
 {
   position: relative;
@@ -39,9 +44,9 @@ body
   stroke-dasharray: 1560;
   stroke-dashoffset: 0;
 }
-.heart-container .icon.heart:hover path
+.heart-container .icon.heart path
 {
-  animation: animate-heart 1s linear forwards
+  animation: animate-heart 2s linear infinite
 }
 
 @keyframes animate-heart
