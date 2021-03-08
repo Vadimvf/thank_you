@@ -1,0 +1,72 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* margin: 0;
+  padding: 0; */
+  background-color: #1c212e;
+}
+.heart-container
+{
+  position: relative;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: contain;
+}
+.heart-container .icon
+{
+  width: 30px;
+}
+.heart-container .icon path
+{
+  fill: transparent;
+  stroke-width: 30;
+  stroke: #ffed77;
+}
+.heart-container .icon.heart path
+{
+  fill: #ffed77;
+  stroke-width: 30;
+  stroke: #ffed77;
+}
+.heart-container .icon path
+{
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+.heart-container .icon.heart:hover path
+{
+  animation: animate-heart 1s linear forwards
+}
+
+@keyframes animate-heart
+{
+  0%
+  {
+    stroke-dashoffset: 0;
+    fill: #ffed77;
+  }
+  40%
+  {
+    stroke-dashoffset: 1560;
+  }
+  80%
+  {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100%
+  {
+    stroke-dashoffset: 3120;
+    fill: #ffed77;
+  }
+}
