@@ -83,7 +83,7 @@ $max: length($colors);
 $dash: 70;
 $dash-gap: 10;
 $dash-space: $dash * ($max - 1) + $dash-gap * $max;
-$time: 6s;
+$time: 20s;
 $time-step: $time/$max;
 
 /* Main styles */
